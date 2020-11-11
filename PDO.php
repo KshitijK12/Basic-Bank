@@ -1,4 +1,12 @@
 <?php
-$pdo= new PDO("mysql:host=ENV['host'];port=ENV['port'];dbname=ENV['dbname'];",ENV['user'],ENV['pass']);
+
+
+$host=getenv('host');
+$port=getenv('port');
+$user=getenv('user');
+$pass=getenv('pass');
+$dbname=getenv('dbname');
+
+$pdo= new PDO("mysql:host=$host;port=$port;dbname=$dbname;",$user,$pass);
 $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_SILENT);
 ?>
