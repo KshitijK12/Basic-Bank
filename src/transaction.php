@@ -86,9 +86,9 @@ if(isset($_SESSION['success']) && $_SESSION['success']!==false)
 		<img src="cover.png" id='logo-cover'>	
 		<div class="header">
   			<div class="header-right">
-    				<a href="index.htm#home">Home</a>
+    				<a href="index.php#home">Home</a>
     				<a href="#contact">Contact</a>
-    				<a href="index.htm#about">About</a>
+    				<a href="index.php#about">About</a>
   			</div>
 		</div>
 	</section>
@@ -99,7 +99,7 @@ if(isset($_SESSION['success']) && $_SESSION['success']!==false)
 			if(isset($_SESSION['failurered']) && $_SESSION['failurered']!==false)
 			{
 				echo "<p style='color:red;font-size:30px;text-align:center;'>".$_SESSION['failurered']."</p>";unset($_SESSION['failurered']);
-				echo "<div class='return'><a href='index.htm'>Click here to return</a></div>";
+				echo "<div class='return'><a href='index.php'>Click here to return</a></div>";
 			}
 			else
 			{
