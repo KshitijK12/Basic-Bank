@@ -130,7 +130,7 @@ if(isset($_SESSION['success']) && $_SESSION['success']!==false)
 					<label for='amt'>ENTER AMOUNT TO TRANSFER</label>
 					<br><input type='text' name='amt'>
 					<input type='submit' value='PAY'>
-				  </form></div>,/section> ";
+				  </form></div></section> ";
 				}
 			}
 			?>
