@@ -106,7 +106,6 @@ if(isset($_SESSION['success']) && $_SESSION['success']!==false)
 				if(isset($_SESSION['acc2_id']) && $_SESSION['acc2_id']>1 )
 				{	
 					echo "<p style='color:green; font-size:20px;'>Scroll Down to Enter Amount..</p><br>";
-					header("#amount");
 				}
 				if(isset($_SESSION['failure']) && $_SESSION['failure']!==false)
 				{	
@@ -126,11 +125,11 @@ if(isset($_SESSION['success']) && $_SESSION['success']!==false)
 				echo "</ul></div>";
 				if(isset($_SESSION['acc2_id']))
 				{
-				echo "<br><br><section id='amount'><div class=amt>Sender's Account ID: ".$a."<br>Receiver's Account ID: ".$b."<br><br><form method='POST'>
+				echo "<br><br><div class=amt>Sender's Account ID: ".$a."<br>Receiver's Account ID: ".$b."<br><br><form method='POST'>
 					<label for='amt'>ENTER AMOUNT TO TRANSFER</label>
 					<br><input type='text' name='amt'>
 					<input type='submit' value='PAY'>
-				  </form></div></section> ";
+				  </form></div>";
 				}
 			}
 			?>
