@@ -106,7 +106,7 @@ if(isset($_SESSION['success']) && $_SESSION['success']!==false)
 				if(isset($_SESSION['acc2_id']) && $_SESSION['acc2_id']>1 )
 				{	
 					echo "<p style='color:green; font-size:20px;'>Scroll Down to Enter Amount..</p><br>";
-					header("#amount");
+					 header("#amount");
 				}
 				if(isset($_SESSION['failure']) && $_SESSION['failure']!==false)
 				{	
