@@ -46,7 +46,7 @@
 							echo "<br><br>Amount- Rs.".$row['Amount'];
 							echo "<br><br>Sender's Account No.- ".$row['acc_from'];
 							echo "<br><br>Receiver's Account No.- ".$row['acc_to'];
-							echo "<br><br>Transaction Time- ".$row['Transaction_Date']."</pre>";
+							echo "<br><br>Transaction Time- ".$row['Transaction_Date']." GMT</pre>";
 						}
 					echo "</div>";
 				}
